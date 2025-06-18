@@ -1,0 +1,5 @@
+python-git
+imutils
+opencv-python
+cmake
+face-recognition
