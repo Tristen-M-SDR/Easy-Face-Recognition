@@ -3,7 +3,7 @@ Perform simple facial recognition tasks using OpenCV and the widely used face-re
 
 ## 1. Please begin by following the steps to install face-recognition library: 
 
-**Step 1: Install dependancies**
+**Step 1:** Install dependancies
 
 <pre>
   sudo apt -y update && sudo apt -y full-upgrade
@@ -31,7 +31,7 @@ Perform simple facial recognition tasks using OpenCV and the widely used face-re
     python3-picamera2
 </pre>
 
-**Step 2: Increase the swap file size so we can build dlib**
+**Step 2:** Increase the swap file size so we can build dlib
 
 <pre>
   sudo nano /etc/dphys-swapfile
@@ -43,7 +43,7 @@ Find `CONF_SWAPSIZE` and change its value from `100` to `1024`. Save and exit th
   sudo /etc/init.d/dphys-swapfile restart
 </pre>
 
-**Step 3: Build and install dlib**
+**Step 3:** Build and install dlib
 <pre>
   cd
   git clone -b 'v19.6' --single-branch https://github.com/davisking/dlib.git
@@ -51,7 +51,7 @@ Find `CONF_SWAPSIZE` and change its value from `100` to `1024`. Save and exit th
   sudo python3 setup.py install --compiler-flags "-mfpu=neon"
 </pre>
 
-**Step 4: Revert the swap size**
+**Step 4:** Revert the swap size
 <pre>
   sudo nano /etc/dphys-swapfile
 </pre>
@@ -61,7 +61,7 @@ Find `CONF_SWAPSIZE` and change its value from `1024` to `100`. Save and exit th
   sudo /etc/init.d/dphys-swapfile restart
 </pre>
 
-**Step 5: Install face_recognition and examples**
+**Step 5:** Install face_recognition and examples
 
 <pre>
   sudo pip3 install face_recognition
@@ -69,7 +69,7 @@ Find `CONF_SWAPSIZE` and change its value from `1024` to `100`. Save and exit th
 
 ## 2. Please run the following commands to install the following libaries: 
 
-**Install PiCamera2 package**
+**Step 1:** Install PiCamera2 package
 
 <pre>
   sudo apt update
@@ -77,7 +77,7 @@ Find `CONF_SWAPSIZE` and change its value from `1024` to `100`. Save and exit th
 </pre>  
 
 
-**Install OpenCV package**
+**Step 2:** Install OpenCV package
 
 <pre>
   sudo pip3 install opencv-python --break-system-packages
@@ -89,7 +89,7 @@ You can test if the **OpenCV** has been successfully installed with the followin
   python3 -c "import cv2; print(cv2.__version__)"
 </pre>
 
-**Install imutils package**
+**Step 3:** Install imutils package
 <pre>
   sudo pip3 install imutils --break-system-packages
 </pre>
@@ -100,7 +100,7 @@ You can test if **imutils** package installed properly by running the following 
   python3 -c "import imutils; print('imutils imported successfully')"
 </pre>
 
-**Install libcamera for PiCamera**
+**Step 4:** Install libcamera for PiCamera
 
 <pre>
   sudo apt install libcamera-apps
@@ -112,12 +112,14 @@ You can test the PiCamera using the following command:
   libcamera-hello
 </pre>
 
-## 3. Open the **Datasets** folder and rename the **your_name** file to your name, and **delete** the dummy file inside. 
+## 3. Setting up the face recognition
 
-## 4. Open **headshots.py** code and change the name to your name.
+**Step 1:** Open the Datasets folder and rename the your_name file to your name, and delete the dummy file inside. 
 
-## 5. Run the **headshots.py** and use the **space** bar to take pictures of your face from multiple angles. Close the frame by pressing the **"q"** key on your keyboard.
+**Step 2:** Open headshots.py code and change the name to your name.
 
-## 6. Run the train_model.py code.
+**Step 3:** Run the headshots.py and use the space bar to take pictures of your face from multiple angles. Close the frame by pressing the **"q"** key on your keyboard.
 
-## 7. Run the facial_rec_simple.py code and observe as it draws a bounding box around your face and labels it with your name. 
+**Step 4:** Run the train_model.py code.
+
+**Step 5:** Run the facial_rec_simple.py code and observe as it draws a bounding box around your face and labels it with your name.
