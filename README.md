@@ -3,10 +3,6 @@ Perform simple facial recognition tasks using OpenCV and the widely used face-re
 
 ## 1. Please begin by visiting the following the link to install face-recognition library and following steps
 
-
-
-https://gist.github.com/mrpjevans/9885e853b603ed046cbc5326b9942991
-
 **Step 1: Install dependancies**
 
 <pre>
