@@ -61,7 +61,7 @@ Find `CONF_SWAPSIZE` and change its value from `1024` to `100`. Save and exit th
   sudo /etc/init.d/dphys-swapfile restart
 </pre>
 
-**Step 5:** Install face_recognition and examples
+**Step 5:** Install face_recognition
 
 <pre>
   sudo pip3 install face_recognition --break-system-packages
