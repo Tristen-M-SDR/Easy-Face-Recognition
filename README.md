@@ -3,6 +3,33 @@ Perform simple facial recognition tasks using OpenCV and the widely used face-re
 
 Steps to train and use this facial recognition repository:
 
+Please begin by visiting the following the link to install face-recognition library
+
+
+
+Please run the following commands to install the following libaries using the following commands. 
+
+
+
+
+Install Opencv package
+
+sudo pip3 install opencv-python --break-system-packages
+
+python3 -c "import cv2; print(cv2.__version__)"
+
+Install imutils package
+
+sudo pip3 install imutils --break-system-packages
+
+python3 -c "import imutils; print('imutils imported successfully')"
+
+Install libcamera for PiCamera
+
+sudo apt update
+sudo apt install libcamera-apps
+
+
 1. In a terminal, run the command pip install -r requirements.txt
 
 2. Open the Datasets folder and rename the your_name file to your name, and delete the dummy file inside. 
