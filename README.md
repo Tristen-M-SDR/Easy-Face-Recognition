@@ -8,20 +8,16 @@ https://gist.github.com/mrpjevans/9885e853b603ed046cbc5326b9942991
 
 2. Please run the following commands to install the following libaries: 
 
-<pre>
-```python
-import face_recognition
-image = face_recognition.load_image_file("your_image.jpg")
-```
-</pre>
+
 
 **Install Opencv package**
-
+<pre>
 sudo pip3 install opencv-python --break-system-packages
-
-You can test if the following command works 
-
+</pre>
+You can test if the OpenCV has been successfully installed with the following command: 
+<pre> 
 python3 -c "import cv2; print(cv2.__version__)"
+</pre>
 
 **Install imutils package**
 
