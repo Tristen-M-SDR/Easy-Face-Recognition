@@ -1,7 +1,7 @@
 # Simple-Facial-Recognition
 Perform simple facial recognition tasks using OpenCV and the widely used face-recognition Python library. 
 
-## 1. Please begin by visiting the following the link to install face-recognition library and following steps
+## 1. Please begin by following the steps to install face-recognition library: 
 
 **Step 1: Install dependancies**
 
