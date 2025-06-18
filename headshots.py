@@ -13,7 +13,7 @@ picam2.start()
 
 
 cv2.namedWindow("press space to take a photo", cv2.WINDOW_NORMAL)
-cv2.resizeWindow("press space tot take a photo", 500, 300)
+cv2.resizeWindow("press space to take a photo", 500, 300)
 
 img_counter = 0
 
