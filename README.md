@@ -64,7 +64,7 @@ Find `CONF_SWAPSIZE` and change its value from `1024` to `100`. Save and exit th
 **Step 5:** Install face_recognition and examples
 
 <pre>
-  sudo pip3 install face_recognition
+  sudo pip3 install face_recognition --break-system-packages
 </pre>
 
 ## 2. Install Additional Libaries: 
