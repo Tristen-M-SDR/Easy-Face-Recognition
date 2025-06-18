@@ -1,7 +1,7 @@
 # Simple-Facial-Recognition
 Perform simple facial recognition tasks using OpenCV and the widely used face-recognition Python library. 
 
-## 1. Please begin by following the steps to install face-recognition library: 
+## 1. Install Face-Recognition Library: 
 
 **Step 1:** Install dependancies
 
@@ -67,7 +67,7 @@ Find `CONF_SWAPSIZE` and change its value from `1024` to `100`. Save and exit th
   sudo pip3 install face_recognition
 </pre>
 
-## 2. Please run the following commands to install the following libaries: 
+## 2. Install Additional Libaries: 
 
 **Step 1:** Install PiCamera2 package
 
@@ -112,7 +112,7 @@ You can test the PiCamera using the following command:
   libcamera-hello
 </pre>
 
-## 3. Setting up the face recognition
+## 3. Setting up the Real-Time Face-Recognition
 
 **Step 1:** Open the Datasets folder and rename the your_name file to your name, and delete the dummy file inside. 
 
