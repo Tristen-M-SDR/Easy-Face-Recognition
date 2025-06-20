@@ -123,7 +123,7 @@ You can test the PiCamera using the following command:
 
 **Step 4:** Open `headshots.py` code and change the name to your name. Save it. 
 
-**Step 5:** Run the headshots.py and use the **space bar** to take pictures of your face from multiple angles. Close the frame by pressing the **"q"** key on your keyboard. You can run `headshots.py` using the following command:
+**Step 5:** Run the headshots.py and use the "**space bar**" to take pictures of your face from multiple angles. Close the frame by pressing the **"q"** key on your keyboard. You can run `headshots.py` using the following command:
 
 <pre>
   python3 headshots.py
