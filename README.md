@@ -117,11 +117,28 @@ You can test the PiCamera using the following command:
 ## 3. Setting up the Real-Time Face-Recognition
 **Step 1:** Download the zip file, you can do this by clicking on the "Code" drop down menu, and then select download zip file.
 
-**Step 2:** You want to navigate to your Downloads folder and extract the downloaded zip file.
+**Step 2:** You want to navigate to your Downloads folder and extract the downloaded zip file. 
+
+<pre>
+  cd Downloads/
+  unzip Easy-Face-Recognition-main.zip
+</pre>
 
 **Step 3:** Open the Datasets folder and rename the your_name file to your name, and delete the dummy file inside. 
 
-**Step 4:** Open `headshots.py` code and change the name to your name. Save it. 
+<pre>
+  cd Easy-Face-Recognition-main/Datasets/your_name
+  rm delete_this.png
+  cd ..
+</pre>
+
+**Step 4:** Open `headshots.py` code by running this command:
+
+<pre>
+  nano headshots.py
+</pre>
+
+and change the name to your name by navigating using the arrow keys. Save and exit (Use `Ctrl+O` to save, press `ENTER`, and `Ctrl+X` to exit) then
 
 **Step 5:** Run the headshots.py and use the "**space bar**" to take pictures of your face from multiple angles. Close the frame by pressing the **"q"** key on your keyboard. You can run `headshots.py` using the following command:
 
