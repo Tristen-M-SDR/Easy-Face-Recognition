@@ -37,7 +37,7 @@ Perform simple facial recognition tasks using OpenCV and the widely used face-re
   sudo nano /etc/dphys-swapfile
 </pre>
 
-Find `CONF_SWAPSIZE` and change its value from `100` to `1024` by navigating using the arrow keys. Save and exit (Use Ctrl+O to save, press ENTER, and Ctrl+X to exit) then run this command:
+Find `CONF_SWAPSIZE` and change its value from `100` to `1024` by navigating using the arrow keys. Save and exit (Use `Ctrl+O` to save, press `ENTER`, and `Ctrl+X` to exit) then run this command:
 
 <pre>
   sudo /etc/init.d/dphys-swapfile restart
@@ -57,7 +57,7 @@ Note: You should see something about "is_alive"
 <pre>
   sudo nano /etc/dphys-swapfile
 </pre>
-Find `CONF_SWAPSIZE` and change its value from `1024` to `100` by navigating using the arrow keys. Save and exit (Use Ctrl+O to save, press ENTER, and Ctrl+X to exit) then run this command:
+Find `CONF_SWAPSIZE` and change its value from `1024` to `100` by navigating using the arrow keys. Save and exit (Use `Ctrl+O` to save, press `ENTER`, and `Ctrl+X` to exit) then run this command:
 
 <pre>
   sudo /etc/init.d/dphys-swapfile restart
@@ -115,13 +115,29 @@ You can test the PiCamera using the following command:
 </pre>
 
 ## 3. Setting up the Real-Time Face-Recognition
+**Step 1:** Download the zip file, you can do this by clicking on the "Code" drop down menu, and then select download zip file.
 
-**Step 1:** Open the Datasets folder and rename the your_name file to your name, and delete the dummy file inside. 
+**Step 2:** You want to navigate to your Downloads folder and extract the downloaded zip file. 
 
-**Step 2:** Open headshots.py code and change the name to your name.
+**Step 3:** Open the Datasets folder and rename the your_name file to your name, and delete the dummy file inside. 
 
-**Step 3:** Run the headshots.py and use the space bar to take pictures of your face from multiple angles. Close the frame by pressing the **"q"** key on your keyboard.
+**Step 4:** Open `headshots.py` code and change the name to your name. Save it. 
 
-**Step 4:** Run the train_model.py code.
+**Step 5:** Run the headshots.py and use the space bar to take pictures of your face from multiple angles. Close the frame by pressing the **"q"** key on your keyboard. You can run `headshots.py` using the following command:
 
-**Step 5:** Run the facial_rec_simple.py code and observe as it draws a bounding box around your face and labels it with your name.
+<pre>
+  python3 headshots.py
+</pre>
+
+**Step 6:** Run the `train_model.py` code. You can run `train_model.py` using the following command:
+
+<pre>
+  python3 train_model.py
+</pre>
+
+
+**Step 7:** Run the facial_rec_simple.py code and observe as it draws a bounding box around your face and labels it with your name. You can run `facial_rec_simple.py` using the following command:
+
+<pre>
+  python3 facial_rec_simple.py
+</pre>
