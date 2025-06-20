@@ -124,7 +124,7 @@ You can test the PiCamera using the following command:
   unzip Easy-Face-Recognition-main.zip
 </pre>
 
-**Step 3:** Open the Datasets folder and rename the your_name file to your name, and delete the dummy file inside. 
+**Step 3:** Open the Datasets folder and delete the dummy file inside by running this command:
 
 <pre>
   cd Easy-Face-Recognition-main/Datasets/your_name
@@ -132,7 +132,14 @@ You can test the PiCamera using the following command:
   cd ..
 </pre>
 
-**Step 4:** Open `headshots.py` code by running this command:
+**Step 4:** Rename the your_name file to your name by copy/pasting this command in the Terminal and the replacing `[type in your name here]` with your name and REMOVE the BRACKETS.
+
+<pre>
+  mv your_name [type in your name here]
+  cd ..
+</pre>
+
+**Step 5:** Open `headshots.py` code by running this command:
 
 <pre>
   nano headshots.py
@@ -140,20 +147,20 @@ You can test the PiCamera using the following command:
 
 and change the name to your name by navigating using the arrow keys. Save and exit (Use `Ctrl+O` to save, press `ENTER`, and `Ctrl+X` to exit) then
 
-**Step 5:** Run the headshots.py and use the "**space bar**" to take pictures of your face from multiple angles. Close the frame by pressing the **"q"** key on your keyboard. You can run `headshots.py` using the following command:
+**Step 6:** Run the headshots.py and use the "**space bar**" to take pictures of your face from multiple angles. Close the frame by pressing the **"q"** key on your keyboard. You can run `headshots.py` using the following command:
 
 <pre>
   python3 headshots.py
 </pre>
 
-**Step 6:** Run the `train_model.py` code. You can run `train_model.py` using the following command:
+**Step 7:** Run the `train_model.py` code. You can run `train_model.py` using the following command:
 
 <pre>
   python3 train_model.py
 </pre>
 
 
-**Step 7:** Run the facial_rec_simple.py code and observe as it draws a bounding box around your face and labels it with your name. You can run `facial_rec_simple.py` using the following command:
+**Step 8:** Run the facial_rec_simple.py code and observe as it draws a bounding box around your face and labels it with your name. You can run `facial_rec_simple.py` using the following command:
 
 <pre>
   python3 facial_rec_simple.py
