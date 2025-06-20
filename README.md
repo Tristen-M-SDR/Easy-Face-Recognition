@@ -37,7 +37,7 @@ Perform simple facial recognition tasks using OpenCV and the widely used face-re
   sudo nano /etc/dphys-swapfile
 </pre>
 
-Find `CONF_SWAPSIZE` and change its value from `100` to `1024`. Save and exit then run this command:
+Find `CONF_SWAPSIZE` and change its value from `100` to `1024` by navigating using the arrow keys. Save and exit (Use Ctrl+O to save, press ENTER, and Ctrl+X to exit) then run this command:
 
 <pre>
   sudo /etc/init.d/dphys-swapfile restart
@@ -51,11 +51,13 @@ Find `CONF_SWAPSIZE` and change its value from `100` to `1024`. Save and exit th
   sudo python3 setup.py install --compiler-flags "-mfpu=neon"
 </pre>
 
+Note: You should see something about "is_alive"
+
 **Step 4:** Revert the swap size
 <pre>
   sudo nano /etc/dphys-swapfile
 </pre>
-Find `CONF_SWAPSIZE` and change its value from `1024` to `100`. Save and exit then run this command:
+Find `CONF_SWAPSIZE` and change its value from `1024` to `100` by navigating using the arrow keys. Save and exit (Use Ctrl+O to save, press ENTER, and Ctrl+X to exit) then run this command:
 
 <pre>
   sudo /etc/init.d/dphys-swapfile restart
