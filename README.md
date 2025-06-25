@@ -1,5 +1,6 @@
 # Simple-Facial-Recognition
-Perform simple facial recognition tasks using OpenCV and the widely used face-recognition Python library. 
+
+Perform simple facial recognition tasks using OpenCV and the widely used face-recognition Python library for **Raspberry Pi OS (Bookworm)**. 
 
 ## 1. Install Face-Recognition Library: 
 
