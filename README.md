@@ -38,7 +38,7 @@ Perform simple facial recognition tasks using OpenCV and the widely used face-re
   sudo nano /etc/dphys-swapfile
 </pre>
 
-Find `CONF_SWAPSIZE` and change its value from `100` to `1024` by navigating using the arrow keys. Save and exit (Use `Ctrl+O` to save, press `ENTER`, and `Ctrl+X` to exit) then run this command:
+Find `CONF_SWAPSIZE` and change its value from `512` to `1024` by navigating using the arrow keys. Save and exit (Use `Ctrl+O` to save, press `ENTER`, and `Ctrl+X` to exit) then run this command:
 
 <pre>
   sudo /etc/init.d/dphys-swapfile restart
@@ -52,13 +52,14 @@ Find `CONF_SWAPSIZE` and change its value from `100` to `1024` by navigating usi
   sudo python3 setup.py install --compiler-flags "-mfpu=neon"
 </pre>
 
-Note: You should see something about "is_alive"
+Note: You should see something about "is_alive".
 
 **Step 4:** Revert the swap size
 <pre>
   sudo nano /etc/dphys-swapfile
 </pre>
-Find `CONF_SWAPSIZE` and change its value from `1024` to `100` by navigating using the arrow keys. Save and exit (Use `Ctrl+O` to save, press `ENTER`, and `Ctrl+X` to exit) then run this command:
+
+Find `CONF_SWAPSIZE` and change its value from `1024` to `512` by navigating using the arrow keys. Save and exit (Use `Ctrl+O` to save, press `ENTER`, and `Ctrl+X` to exit) then run this command:
 
 <pre>
   sudo /etc/init.d/dphys-swapfile restart
@@ -115,6 +116,13 @@ You can test the PiCamera using the following command:
   libcamera-hello
 </pre>
 
+**Step 4:** Installing the compatible numpy version
+
+<pre>
+  sudo pip3 uninstall numpy --break-system-packages
+  sudo pip3 install numpy==1.24.4 --break-system-packages
+</pre>
+
 ## 3. Setting up the Real-Time Face-Recognition
 **Step 1:** Download the zip file, you can do this by clicking on the "Code" drop down menu, and then select download zip file.
 
@@ -139,6 +147,7 @@ You can test the PiCamera using the following command:
   mv your_name type_in_your_name_here
   cd ..
 </pre>
+
 
 **Step 5:** Open `headshots.py` code by running this command:
 
