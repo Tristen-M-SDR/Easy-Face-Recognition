@@ -80,7 +80,6 @@ Find `CONF_SWAPSIZE` and change its value from `1024` to `512` by navigating usi
   sudo apt install -y python3-picamera2
 </pre>  
 
-
 **Step 2:** Install OpenCV package
 
 <pre>
@@ -116,7 +115,7 @@ You can test the PiCamera using the following command:
   libcamera-hello
 </pre>
 
-**Step 4:** Installing the compatible numpy version
+**Step 5:** Installing the compatible numpy version
 
 <pre>
   sudo pip3 uninstall numpy --break-system-packages
