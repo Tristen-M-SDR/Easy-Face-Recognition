@@ -50,6 +50,7 @@ Find `CONF_SWAPSIZE` and change its value from `512` to `1024` by navigating usi
   git clone -b 'v19.6' --single-branch https://github.com/davisking/dlib.git
   cd ./dlib
   sudo python3 setup.py install --compiler-flags "-mfpu=neon"
+  cd
 </pre>
 
 Note: You should see something about "is_alive".
