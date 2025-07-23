@@ -140,7 +140,7 @@ You can test the PiCamera using the following command:
   cd ..
 </pre>
 
-**Step 3:** Rename the **rename** file to your name by copy/pasting this command in the Terminal and the replacing `type_in_your_name_here` with your name.
+**Step 3:** Rename the "**rename**" file to your name by copy/pasting this command in the Terminal and the replacing `type_in_your_name_here` with your name.
 
 <pre>
   mv rename type_in_your_name_here
