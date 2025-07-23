@@ -40,7 +40,7 @@ while True:
 
     for encoding in encodings:
         matches = face_recognition.compare_faces(data["encodings"], encoding)
-        name = "Unknown"
+        name = "Imposter"
 
         if True in matches:
             matchedIdxs = [i for (i, b) in enumerate(matches) if b]
