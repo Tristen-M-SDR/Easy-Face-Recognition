@@ -135,15 +135,15 @@ You can test the PiCamera using the following command:
 **Step 2:** Open the Datasets folder and delete the dummy file inside by running this command:
 
 <pre>
-  cd Datasets/your_name
+  cd Datasets/rename
   rm delete_this.png
   cd ..
 </pre>
 
-**Step 3:** Rename the your_name file to your name by copy/pasting this command in the Terminal and the replacing `type_in_your_name_here` with your name.
+**Step 3:** Rename the **Name** file to your name by copy/pasting this command in the Terminal and the replacing `type_in_your_name_here` with your name.
 
 <pre>
-  mv your_name type_in_your_name_here
+  mv rename type_in_your_name_here
 </pre>
 
 
