@@ -1,7 +1,7 @@
 import cv2
 import os
 from picamera2 import Picamera2
-name = 'Tristen' #replace with your name
+name = 'rename' #replace with your name
 
 folder_path = f"Datasets/{name}"
 if not os.path.exists(folder_path):
