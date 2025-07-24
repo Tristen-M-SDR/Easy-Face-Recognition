@@ -107,13 +107,13 @@ You can test if **imutils** package installed properly by running the following 
 **Step 4:** Install libcamera for PiCamera
 
 <pre>
-  sudo apt install libcamera-apps
+  sudo apt install rpicamera-apps
 </pre>
 
 You can test the PiCamera using the following command:
 
 <pre>
-  libcamera-hello
+  rpicamera-hello
 </pre>
 
 **Step 5:** Installing the compatible numpy version
