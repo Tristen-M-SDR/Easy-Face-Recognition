@@ -129,7 +129,7 @@ You can test the PiCamera using the following command:
 <pre>
   cd Downloads/
   git clone https://github.com/Tristen-M-SDR/Easy-Face-Recognition
-  cd Easy-Face-Recognition-main/
+  cd Easy-Face-Recognition/
 </pre>
 
 **Step 2:** Open the Datasets folder and delete the dummy file inside by running this command:
