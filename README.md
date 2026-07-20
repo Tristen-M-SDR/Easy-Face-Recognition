@@ -59,9 +59,9 @@ Note: You should see something about "is_alive".
 
 <pre>
   pip3 install face_recognition 
-    opencv-python \
-    imutils \
-    numpy==1.24.4 
+  pip3 install opencv-python 
+  pip3 install imutils 
+  pip3 install numpy==1.24.4 
 </pre>
 
 ## 2. Test Pi-Camera 
