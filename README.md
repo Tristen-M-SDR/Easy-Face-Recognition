@@ -16,7 +16,8 @@ Perform simple facial recognition tasks using OpenCV and the widely used face-re
     curl \
     graphicsmagick \
     libgraphicsmagick1-dev \
-    libatlas-base-dev \
+    libopenblas-dev \
+    libblas-dev \
     libavcodec-dev \
     libavformat-dev \
     libboost-all-dev \
@@ -32,19 +33,8 @@ Perform simple facial recognition tasks using OpenCV and the widely used face-re
     python3-picamera2
 </pre>
 
-**Step 2:** Increase the swap file size so we can build dlib
 
-<pre>
-  sudo nano /etc/dphys-swapfile
-</pre>
-
-Find `CONF_SWAPSIZE` and change its value from `512` to `1024` by navigating using the arrow keys. Save and exit (Use `Ctrl+O` to save, press `ENTER`, and `Ctrl+X` to exit) then run this command:
-
-<pre>
-  sudo /etc/init.d/dphys-swapfile restart
-</pre>
-
-**Step 3:** Build and install dlib
+**Step 2:** Build and install dlib
 <pre>
   cd
   git clone -b 'v19.6' --single-branch https://github.com/davisking/dlib.git
@@ -55,20 +45,13 @@ Find `CONF_SWAPSIZE` and change its value from `512` to `1024` by navigating usi
 
 Note: You should see something about "is_alive".
 
-**Step 4:** Revert the swap size
-<pre>
-  sudo nano /etc/dphys-swapfile
-</pre>
 
-Find `CONF_SWAPSIZE` and change its value from `1024` to `512` by navigating using the arrow keys. Save and exit (Use `Ctrl+O` to save, press `ENTER`, and `Ctrl+X` to exit) then run this command:
+**Step 3:** Install face_recognition
 
 <pre>
-  sudo /etc/init.d/dphys-swapfile restart
-</pre>
-
-**Step 5:** Install face_recognition
-
-<pre>
+  mkdir face_rec
+  python3 -m venv my_env
+  source my_env/bin/activate
   sudo pip3 install face_recognition --break-system-packages
 </pre>
 
@@ -119,7 +102,6 @@ You can test the PiCamera using the following command:
 **Step 5:** Installing the compatible numpy version
 
 <pre>
-  sudo pip3 uninstall numpy --break-system-packages
   sudo pip3 install numpy==1.24.4 --break-system-packages
 </pre>
 
