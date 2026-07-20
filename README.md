@@ -63,22 +63,7 @@ Note: You should see something about "is_alive".
     numpy==1.24.4 
 </pre>
 
-## 2. Install Additional Libaries: 
-
-**Step 1:** Install PiCamera2 package
-
-<pre>
-  sudo apt update
-  sudo apt install -y python3-picamera2
-</pre>  
-
-**Step 2:** Install rpicam for PiCamera
-
-<pre>
-  sudo apt install rpicam-apps
-</pre>
-
-You can test the PiCamera using the following command:
+## 2. Test Pi-Camera 
 
 <pre>
   rpicam-hello
