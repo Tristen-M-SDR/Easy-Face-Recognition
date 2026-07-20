@@ -4,7 +4,15 @@ Perform simple facial recognition tasks using OpenCV and the widely used face-re
 
 ## 1. Install Face-Recognition Library: 
 
-**Step 1:** Install dependancies
+
+**Step 1:** Create Virtual Environment
+<pre>
+  mkdir face_rec
+  python3 -m venv my_env --system-site-packages
+  source my_env/bin/activate
+</pre>
+  
+**Step 2:** Install dependancies
 
 <pre>
   sudo apt -y update && sudo apt -y full-upgrade
@@ -49,10 +57,10 @@ Note: You should see something about "is_alive".
 **Step 3:** Install face_recognition
 
 <pre>
-  mkdir face_rec
-  python3 -m venv my_env
-  source my_env/bin/activate
-  sudo pip3 install face_recognition --break-system-packages
+  pip3 install face_recognition 
+    opencv-python \
+    imutils \
+    numpy==1.24.4 
 </pre>
 
 ## 2. Install Additional Libaries: 
@@ -64,30 +72,7 @@ Note: You should see something about "is_alive".
   sudo apt install -y python3-picamera2
 </pre>  
 
-**Step 2:** Install OpenCV package
-
-<pre>
-  sudo pip3 install opencv-python --break-system-packages
-</pre>
-
-You can test if the **OpenCV** has been successfully installed with the following command: 
-
-<pre>
-  python3 -c "import cv2; print(cv2.__version__)"
-</pre>
-
-**Step 3:** Install imutils package
-<pre>
-  sudo pip3 install imutils --break-system-packages
-</pre>
-
-You can test if **imutils** package installed properly by running the following command: 
-
-<pre>
-  python3 -c "import imutils; print('imutils imported successfully')"
-</pre>
-
-**Step 4:** Install rpicam for PiCamera
+**Step 2:** Install rpicam for PiCamera
 
 <pre>
   sudo apt install rpicam-apps
@@ -97,12 +82,6 @@ You can test the PiCamera using the following command:
 
 <pre>
   rpicam-hello
-</pre>
-
-**Step 5:** Installing the compatible numpy version
-
-<pre>
-  sudo pip3 install numpy==1.24.4 --break-system-packages
 </pre>
 
 ## 3. Setting up the Real-Time Face-Recognition
