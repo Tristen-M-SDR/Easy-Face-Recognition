@@ -8,6 +8,7 @@ Perform simple facial recognition tasks using OpenCV and the widely used face-re
 **Step 1:** Create Virtual Environment
 <pre>
   mkdir face_rec
+  cd face_rec
   python3 -m venv my_env --system-site-packages
   source my_env/bin/activate
 </pre>
