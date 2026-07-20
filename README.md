@@ -74,7 +74,6 @@ Note: You should see something about "is_alive".
 **Step 1:** Download and navigate to the files using the following command:
 
 <pre>
-  cd Downloads/
   git clone https://github.com/Tristen-M-SDR/Easy-Face-Recognition
   cd Easy-Face-Recognition/
 </pre>
